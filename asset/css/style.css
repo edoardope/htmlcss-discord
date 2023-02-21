@@ -20,22 +20,16 @@ table{
 
 /* page structure */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
     min-height: 650px;
-    padding: 15px 25% 50px;
+    padding: 15px 20% 50px;
 }
 
-h1{
-    font-size: 65px;
-    margin-bottom: 60px;
-}
 
-#banner-text p{
-    font-size: 20px;
-    margin-bottom: 55px;
-}
 
 #banner{
     display: flex;
@@ -53,41 +47,41 @@ h1{
 
 #footer-top{
     display: flex;
-    background-color: orange ;
+    background-color: rgb(35,39,42) ;
     min-height: 400px;
-    padding: 3% 25% 1%;
+    padding: 3% 25% 1px;
     justify-content: space-between;
 }
 
 #footer-bot{
-    background-color: orange ;
+    background-color: rgb(35,39,42) ;
     min-height: 50px;
     padding: 0px 25% 3%;
 }
 
 #p1{
     display: flex;
-    background-color: aqua;
+    background-color: white;
     min-height: 600px;
     align-items: center;
-    padding: 5% 25%;
+    padding: 5% 20% 9%;
 }
 
 #p2{
     display: flex;
-    background-color: rgb(3, 255, 24);
+    background-color: rgb(246,246,246);
     min-height: 600px;
     align-items: center;
-    padding: 5% 25%;
+    padding: 5% 20%;
 }
 
 #p3{
     display: flex;
     flex-direction: column;
-    background-color: rgb(3, 255, 24);
+    background-color: rgb(246,246,246);
     min-height: 700px;
     align-items: center;
-    padding: 5% 25%;
+    padding: 5% 20%;
 }
 
 
@@ -110,64 +104,86 @@ h1{
 }
 
 .fc1{
-    background-color: brown;
+    
     flex-basis: 25%;
 }
 
 .fc2{
-    background-color: brown;
+    
     flex-basis: 15%;
 }
 
 .fb{
-    background-color: brown;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
     min-height: 130px;
+    margin-top: 20px;
 }
 
 .img-box1{
-    background-color: blue;
     height: 400px;
     flex-basis: 60%;
+    padding-left: 5%;
 }
 
 .text-box1{
-    background-color: blueviolet;
     height: 400px;
     flex-basis: 40%;
+    padding: 35px;
 }
 
 .img-box2{
-    background-color: blue;
     height: 400px;
     flex-basis: 60%;
+    padding-left: 8%;
 }
 
 .text-box2{
-    background-color: blueviolet;
     height: 400px;
     flex-basis: 40%;
+    padding: 35px;
 }
 
 .p3-title{
-    background-color: blueviolet;
     width: 100%;
-    height: 300px;
+    text-align: center;
 }
 
 .p3-img{
-    background-color: blue;
     width: 100%;
-    height: 500px;
+    min-height: 600px;
+    text-align: center;
     
 }
 
 .p3-button{
-    background-color: rgb(255, 0, 0);
     width: 100%;
-    height: 300px;
+    text-align: center;
 }
 
 /* style */
+
+h1{
+    font-size: 65px;
+    margin-bottom: 60px;
+}
+
+h2{
+    font-size: 55px;
+    margin-bottom: 40px;  
+}
+
+h3{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 35px;
+    margin-bottom: 60px;
+}
 
 li a{
     color: white;
@@ -182,7 +198,6 @@ li a{
     background-color: black;
     padding: 17px;
     border-radius: 25px;
-    font-size: 80%;
     margin: 20px;
     font-size: 120%;
 }
@@ -195,11 +210,84 @@ li a{
     background-color: white;
     padding: 17px;
     border-radius: 25px;
-    font-size: 80%;
     margin: 20px;
     font-size: 120%;
 }
 
+.purple-button{
+    background-color: rgb(142,161,225);
+    padding: 17px;
+    border-radius: 30px;
+    margin: 20px;
+    font-size: 120%;
+    color: white;
+}
+
 a{
     text-decoration: none;
+}
+
+#banner-text p{
+    font-size: 20px;
+    margin-bottom: 55px;
+}
+
+.text-box1,.text-box2,.p3-title p{
+    font-size: 20px;
+}
+
+.wave{
+    background-image: url(../img/wave.svg);
+    height: 130px;
+    filter: invert(100%) sepia(0%) saturate(1187%) hue-rotate(196deg) brightness(116%) contrast(93%);
+}
+
+.rotate_ninety {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(180deg);
+}
+
+.credit-t{
+    font-size: 250%;
+    color: rgb(116,139,223);
+    margin-bottom: 20px ;
+}
+
+select{
+    background:transparent;
+    border:0;
+    margin-bottom: 10px;
+}
+
+
+.block{
+    display: block;
+}
+
+.social{
+    filter: invert(100%) sepia(25%) saturate(2%) hue-rotate(201deg) brightness(103%) contrast(101%);
+    font-size: 150%;
+    margin-right: 10px;
+}
+
+.f-title{
+    color: rgb(116,139,223);
+    margin-top: 7px;
+}
+
+.f-option{
+    color: white;
+    margin-top: 7px;
+}
+
+hr{
+    border: 1px solid;
+    color: rgb(116,139,223);
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
 }

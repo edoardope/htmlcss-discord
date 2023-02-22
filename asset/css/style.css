@@ -243,6 +243,8 @@ a{
 .wave{
     background-image: url(../img/wave.svg);
     height: 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
     filter: invert(100%) sepia(0%) saturate(1187%) hue-rotate(196deg) brightness(116%) contrast(93%);
 }
 

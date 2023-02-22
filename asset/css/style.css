@@ -25,7 +25,9 @@ table{
 header{
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    min-height: 650px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 700px;
     padding: 15px 20% 50px;
 }
 
@@ -117,9 +119,8 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    
     min-height: 130px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .img-box1{
@@ -200,6 +201,7 @@ li a{
     border-radius: 25px;
     margin: 20px;
     font-size: 120%;
+    cursor: pointer;
 }
 
 .white{
@@ -212,6 +214,7 @@ li a{
     border-radius: 25px;
     margin: 20px;
     font-size: 120%;
+    cursor: pointer;
 }
 
 .purple-button{
@@ -221,6 +224,7 @@ li a{
     margin: 20px;
     font-size: 120%;
     color: white;
+    cursor: pointer;
 }
 
 a{
@@ -242,7 +246,7 @@ a{
     filter: invert(100%) sepia(0%) saturate(1187%) hue-rotate(196deg) brightness(116%) contrast(93%);
 }
 
-.rotate_ninety {
+.rotate-180 {
     transform: rotate(180deg);
 }
 
@@ -256,6 +260,7 @@ select{
     background:transparent;
     border:0;
     margin-bottom: 10px;
+    color: white;
 }
 
 
@@ -277,6 +282,8 @@ select{
 .f-option{
     color: white;
     margin-top: 7px;
+    cursor: pointer;
+    
 }
 
 hr{
@@ -287,3 +294,34 @@ hr{
 body{
     font-family: 'Rubik', sans-serif;
 }
+
+.f-option:hover{
+    text-decoration:underline;
+}
+
+li a:hover{
+    text-decoration:underline;
+}
+
+.stars{
+    padding-top: 35px;
+    width: 47%;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    margin-left: 26.5%;
+    margin-right: 26.5%;
+}    
+
+.purple-button-reg{
+    background-color: rgb(142,161,225);
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 30px;
+    font-size: 120%;
+    color: white;
+    cursor: pointer;
+    width: 10%;
+    height: 40px;
+}      
